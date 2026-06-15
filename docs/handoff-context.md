@@ -17,3 +17,7 @@
 ## Notes
 - `git push` was unstable over HTTPS, so GitHub API was used to finish the upload.
 - The working tree is currently clean.
+
+## Migration Summary
+- This repo is only one part of the full machine migration context.
+- The full cross-project migration overview is in `docs/all-projects-migration.md`.
