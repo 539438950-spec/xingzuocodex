@@ -1,0 +1,49 @@
+<view class="page">
+  <view class="panel hero">
+    <view class="title">?????</view>
+    <view class="subtitle">4 ??????,?? 8 ???,???? 0?</view>
+  </view>
+
+  <view class="panel">
+    <view class="label">??????</view>
+    <input
+      class="guess-input"
+      type="number"
+      maxlength="4"
+      placeholder="?? 0279"
+      value="{{guessInput}}"
+      bindinput="onInputChange"
+      confirm-type="done"
+      bindconfirm="handleGuess"
+    />
+
+    <view class="actions">
+      <button class="primary" type="primary" bindtap="handleGuess" disabled="{{gameOver}}">????</button>
+      <button class="secondary" bindtap="resetGame">????</button>
+    </view>
+
+    <view class="status">{{statusText}}</view>
+    <view class="meta">??????:{{remainingAttempts}}</view>
+
+    <view wx:if="{{gameOver}}" class="answer-card">
+      <view class="answer-label">????</view>
+      <view class="answer-value">{{answer}}</view>
+    </view>
+  </view>
+
+  <view class="panel">
+    <view class="label">????</view>
+    <view wx:if="{{history.length === 0}}" class="empty">????</view>
+
+    <view wx:for="{{history}}" wx:key="attempt" class="history-item">
+      ? {{item.attempt}} ???:{{item.guess}} ? {{item.result.a}} A {{item.result.b}} B
+    </view>
+  </view>
+
+  <view class="panel rules">
+    <view class="label">????</view>
+    <view class="rule-line">A:?????????</view>
+    <view class="rule-line">B:??????????</view>
+    <view class="rule-line">????:??????? 0,?? 0 ???????????</view>
+  </view>
+</view>

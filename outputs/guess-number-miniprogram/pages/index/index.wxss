@@ -1,0 +1,125 @@
+.page {
+  min-height: 100vh;
+  padding: 28rpx;
+  background:
+    radial-gradient(circle at top right, rgba(15, 118, 110, 0.16), transparent 34%),
+    linear-gradient(180deg, #eef7f5 0%, #f8fbfa 100%);
+  box-sizing: border-box;
+}
+
+.panel {
+  margin-bottom: 24rpx;
+  padding: 28rpx;
+  border-radius: 24rpx;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 14rpx 36rpx rgba(22, 48, 43, 0.08);
+}
+
+.hero {
+  background: linear-gradient(135deg, #0f766e, #155e75);
+  color: #ffffff;
+}
+
+.title {
+  font-size: 42rpx;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 12rpx;
+  font-size: 26rpx;
+  opacity: 0.9;
+}
+
+.label {
+  margin-bottom: 18rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #123c35;
+}
+
+.guess-input {
+  height: 88rpx;
+  padding: 0 24rpx;
+  border: 2rpx solid #cce5e0;
+  border-radius: 18rpx;
+  background: #fdfefe;
+  font-size: 36rpx;
+  letter-spacing: 8rpx;
+}
+
+.actions {
+  display: flex;
+  gap: 18rpx;
+  margin-top: 20rpx;
+}
+
+.actions button {
+  flex: 1;
+  margin: 0;
+  border-radius: 999rpx;
+  font-size: 28rpx;
+}
+
+.primary {
+  background: linear-gradient(135deg, #0f766e, #0d9488);
+}
+
+.secondary {
+  color: #155e75;
+  border: 2rpx solid #9dd4cb;
+  background: #ffffff;
+}
+
+.status {
+  margin-top: 18rpx;
+  font-size: 28rpx;
+  color: #1f3d37;
+}
+
+.meta {
+  margin-top: 8rpx;
+  font-size: 24rpx;
+  color: #4b635e;
+}
+
+.answer-card {
+  margin-top: 18rpx;
+  padding: 22rpx;
+  border-radius: 18rpx;
+  background: #ecfdf5;
+}
+
+.answer-label {
+  font-size: 24rpx;
+  color: #0f766e;
+}
+
+.answer-value {
+  margin-top: 8rpx;
+  font-size: 40rpx;
+  font-weight: 700;
+  letter-spacing: 10rpx;
+}
+
+.empty {
+  font-size: 26rpx;
+  color: #6a807a;
+}
+
+.history-item {
+  padding: 18rpx 0;
+  border-bottom: 1rpx solid #e6efec;
+  font-size: 28rpx;
+  color: #16302b;
+}
+
+.history-item:last-child {
+  border-bottom: none;
+}
+
+.rules .rule-line {
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: #30524b;
+}
